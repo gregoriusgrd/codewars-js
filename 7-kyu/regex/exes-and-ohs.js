@@ -13,5 +13,19 @@ XO("zzoo") => false
 */
 
 function XO(str) {
-    //code here
+    if (str == null || str.length === 0) return true
+    let countX = (str.match(/[x]/gi) || []).length
+    let countO = (str.match(/[o]/gi) || []).length
+    return countX === countO
 }
+
+console.log(XO("x"))
+
+//alt
+/*
+function XO(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
+}
+*/
