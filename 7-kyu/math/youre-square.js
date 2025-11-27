@@ -24,7 +24,7 @@ var isSquare = function(n){
     return Math.sqrt(n) % 1 === 0
 }
 
-const test = 10
+const test = -1
 console.log(isSquare(test))
 
 /*
